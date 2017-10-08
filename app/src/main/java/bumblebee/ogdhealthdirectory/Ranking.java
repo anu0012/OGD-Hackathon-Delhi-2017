@@ -85,7 +85,7 @@ public class Ranking extends AppCompatActivity {
             ArrayList<RankObj> list = new ArrayList<>();
 
             // Create URL object
-            URL url = createUrl("https://0de21e97.ngrok.io/hospital");
+            URL url = createUrl("https://b5952f18.ngrok.io/hospital");
             // Perform HTTP request to the URL and receive a JSON response back
             String jsonResponse = "";
             try {

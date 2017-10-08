@@ -85,7 +85,7 @@ public class GovtInitiatives extends AppCompatActivity {
             ArrayList<GovtSchemeObjectClass> list = new ArrayList<>();
 
             // Create URL object
-            URL url = createUrl("https://0de21e97.ngrok.io/services");
+            URL url = createUrl("https://b5952f18.ngrok.io/services");
             // Perform HTTP request to the URL and receive a JSON response back
             String jsonResponse = "";
             try {

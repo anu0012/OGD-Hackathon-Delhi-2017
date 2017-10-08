@@ -87,7 +87,7 @@ public class Complaint extends AppCompatActivity {
 
             try {
 
-                URL url = new URL("https://8ce2d83b.ngrok.io/complaints"); // here is your URL path
+                URL url = new URL("https://b5952f18.ngrok.io/complaints"); // here is your URL path
 
                 JSONObject postDataParams = new JSONObject();
                 postDataParams.put("name", "abc");
@@ -145,7 +145,7 @@ public class Complaint extends AppCompatActivity {
         @Override
         protected void onPostExecute(String r) {
             pDialog.dismiss();
-            Toast.makeText(Complaint.this, r, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(Complaint.this, "Details Submitted", Toast.LENGTH_SHORT).show();
 
 
         }
