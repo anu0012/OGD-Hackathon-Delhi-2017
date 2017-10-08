@@ -321,7 +321,7 @@ public class MainActivity extends AppCompatActivity {
                 CSVReader reader = new CSVReader(csvStreamReader);
                 String[] nextLine;
                 int count = 1;
-                while ((nextLine = reader.readNext()) != null && count <= 501) {    // TODO: Increase Tuples
+                while ((nextLine = reader.readNext()) != null && count <= 301) {    // TODO: Increase Tuples
                     // nextLine[] is an array of values from the line
                     if (count == 1) {
                         //Toast.makeText(Home.this, "Hello world!!!", Toast.LENGTH_SHORT).show();
