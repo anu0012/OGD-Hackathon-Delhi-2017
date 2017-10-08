@@ -283,12 +283,12 @@ public class MainActivity extends AppCompatActivity {
 //                result.add(currHospital);
 //            }
 
-            if((currHospital.getCategory().contains(type)) && (currHospital.getSystemsOfMedicine().contains(system_medi))
-                    && (currHospital.getState().contains(state)) && (currHospital.getDistrict().contains(district))
-                    && (currHospital.getSpecialities().contains(speciality)) && (currHospital.getFacilities().contains(facility))) {
+
+                        if((currHospital.getCategory().contains(type) ||  type.equals("All")) && (currHospital.getSystemsOfMedicine().contains(system_medi) ||  system_medi.equals("All"))
+                     && (currHospital.getDistrict().contains(district) ||  district.equals("All"))
+                    && (currHospital.getSpecialities().contains(speciality) ||  speciality.equals("All"))) {
                 result.add(currHospital);
             }
-
             }
 
        // Toast.makeText(MainActivity.this, result.size()+"", Toast.LENGTH_SHORT).show();
@@ -321,7 +321,7 @@ public class MainActivity extends AppCompatActivity {
                 CSVReader reader = new CSVReader(csvStreamReader);
                 String[] nextLine;
                 int count = 1;
-                while ((nextLine = reader.readNext()) != null && count <= 200) {    // TODO: Increase Tuples
+                while ((nextLine = reader.readNext()) != null && count <= 501) {    // TODO: Increase Tuples
                     // nextLine[] is an array of values from the line
                     if (count == 1) {
                         //Toast.makeText(Home.this, "Hello world!!!", Toast.LENGTH_SHORT).show();
